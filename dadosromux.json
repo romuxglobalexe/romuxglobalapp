@@ -1,0 +1,21 @@
+{
+  "tutoriais": [
+    {
+      "titulo": "Como usar Script X",
+      "descricao": "Tutorial básico",
+      "link": "https://youtube.com"
+    }
+  ],
+  "downloads": [
+    {
+      "nome": "Script X",
+      "url": "https://seusite.com/script"
+    }
+  ],
+  "executores": [
+    {
+      "nome": "Executor A",
+      "url": "https://seusite.com/executor"
+    }
+  ]
+}
