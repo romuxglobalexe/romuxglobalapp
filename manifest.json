@@ -1,15 +1,23 @@
 {
   "name": "Romux Global App",
   "short_name": "Romux",
+  "description": "Aplicativo moderno da Romux para scripts, tecnologia e ferramentas.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#0A84FF",
+  "orientation": "portrait",
+  "background_color": "#0a0f1a",
+  "theme_color": "#0a0f1a",
 
   "icons": [
     {
       "src": "assets/logo.png",
       "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ]
