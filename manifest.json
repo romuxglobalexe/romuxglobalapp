@@ -1,13 +1,14 @@
 {
   "name": "Romux Global App",
-  "short_name": "RomuxApp",
-  "start_url": "/romuxglobalapp/index.html",
+  "short_name": "Romux",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#111111",
-  "theme_color": "#222222",
+  "background_color": "#000000",
+  "theme_color": "#0A84FF",
+
   "icons": [
     {
-      "src": "icon.png",
+      "src": "assets/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
