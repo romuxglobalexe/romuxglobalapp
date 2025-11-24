@@ -2,47 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Meu App</title>
+  <title>Romux Global App</title>
   <style>
-    body { font-family: Arial; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #eee; }
     .menu { display: flex; background: #222; color: white; }
-    .menu div { padding: 10px; cursor: pointer; }
+    .menu div { padding: 10px 15px; cursor: pointer; }
     .menu div:hover { background: #444; }
     .content { padding: 20px; }
+    a { color: #4ea1ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
-</head>
-<body>
 
-<div class="menu">
-  <div onclick="show('tutoriais')">Tutoriais</div>
-  <div onclick="show('downloads')">Downloads</div>
-  <div onclick="show('executores')">Executores</div>
-</div>
-
-<div class="content" id="conteudo">Selecione uma opção acima</div>
-
-<script>
-async function carregarDados() {
-  const res = await fetch("https://raw.githubusercontent.com/romuxglobalexe/meuappdados/main/dados.json")
-  return await res.json()
-}
-
-async function show(tipo) {
-  const dados = await carregarDados()
-  let html = ""
-
-  dados[tipo].forEach(item => {
-    html += `
-      <h3>${item.titulo || item.nome}</h3>
-      <p>${item.descricao || ""}</p>
-      <a href="${item.link || item.url}" target="_blank">Abrir</a>
-      <hr>
-    `
-  })
-
-  document.getElementById("conteudo").innerHTML = html
-}
-</script>
-
-</body>
-</html>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" i
